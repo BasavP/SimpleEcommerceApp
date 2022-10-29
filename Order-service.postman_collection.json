@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "a07b8c9b-30bc-440c-8965-3360baaa446b",
+		"name": "Order-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderLinesDTOS\":[\r\n        {\r\n            \"skuCode\":\"iphone_13\",\r\n            \"price\":1200,\r\n            \"quantity\" :\"1\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
