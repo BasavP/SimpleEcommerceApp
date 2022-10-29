@@ -1,4 +1,4 @@
-package com.basav.productservice.productservice;
+package com.basav.productservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,9 +1,9 @@
-package com.basav.productservice.productservice.service;
+package com.basav.productservice.service;
 
-import com.basav.productservice.productservice.dto.ProductRequestDTO;
-import com.basav.productservice.productservice.dto.ProductResponseDTO;
-import com.basav.productservice.productservice.model.Product;
-import com.basav.productservice.productservice.repository.ProductRepository;
+import com.basav.productservice.dto.ProductRequestDTO;
+import com.basav.productservice.dto.ProductResponseDTO;
+import com.basav.productservice.model.Product;
+import com.basav.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Service;

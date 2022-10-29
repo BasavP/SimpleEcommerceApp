@@ -1,4 +1,4 @@
-package com.basav.productservice.productservice;
+package com.basav.productservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

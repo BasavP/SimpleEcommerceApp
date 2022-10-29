@@ -1,4 +1,4 @@
-package com.basav.productservice.productservice.dto;
+package com.basav.productservice.dto;
 
 
 import lombok.AllArgsConstructor;

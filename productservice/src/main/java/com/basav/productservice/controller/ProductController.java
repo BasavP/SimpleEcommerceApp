@@ -1,9 +1,9 @@
-package com.basav.productservice.productservice.controller;
+package com.basav.productservice.controller;
 
 
-import com.basav.productservice.productservice.dto.ProductRequestDTO;
-import com.basav.productservice.productservice.dto.ProductResponseDTO;
-import com.basav.productservice.productservice.service.ProductService;
+import com.basav.productservice.dto.ProductRequestDTO;
+import com.basav.productservice.dto.ProductResponseDTO;
+import com.basav.productservice.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
 import org.springframework.http.HttpStatus;
