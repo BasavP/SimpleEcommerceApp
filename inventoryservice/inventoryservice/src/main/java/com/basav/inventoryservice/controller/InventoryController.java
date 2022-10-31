@@ -33,5 +33,7 @@ public class InventoryController {
         /*List<InventoryResponse> inStock = inventoryService.isInStock(Collections.singletonList(skuCode));*/
 
         return inventoryService.inSkuStock(skuCode);
+
+        
     }
 }
