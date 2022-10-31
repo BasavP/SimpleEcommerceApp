@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Collections;
 import java.util.List;
 
 @RestController
@@ -23,5 +24,14 @@ public class InventoryController {
     @ResponseStatus(HttpStatus.OK)
     public List<InventoryResponse> isInStock(@RequestParam List<String> skuCode) {
         return inventoryService.isInStock(skuCode);
+    }
+
+
+    @GetMapping("/{skuCode}")
+    public boolean inSkuStock(@PathVariable("skuCode") String skuCode){
+
+        /*List<InventoryResponse> inStock = inventoryService.isInStock(Collections.singletonList(skuCode));*/
+
+        return inventoryService.inSkuStock(skuCode);
     }
 }

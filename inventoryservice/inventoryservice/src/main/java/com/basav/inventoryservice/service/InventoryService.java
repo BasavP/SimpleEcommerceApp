@@ -11,8 +11,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -36,4 +38,12 @@ public class InventoryService {
                                 .build()
                 ).collect(Collectors.toList());
     }
+
+
+    public boolean inSkuStock( String skuCode){
+        List<InventoryResponse> inStock = this.isInStock(Collections.singletonList(skuCode));
+
+    return inStock.isEmpty();
+    }
+
 }
