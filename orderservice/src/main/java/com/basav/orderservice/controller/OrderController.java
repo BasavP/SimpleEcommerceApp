@@ -16,7 +16,7 @@ public class OrderController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String placeOrder(@RequestBody OrderRequestDTO orderRequestDTO){
+    public String placeOrder(@RequestBody OrderRequestDTO orderRequestDTO) throws Exception {
 
         orderService.placeOrder(orderRequestDTO);
         return "Order created successfully";

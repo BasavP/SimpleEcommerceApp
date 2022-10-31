@@ -34,6 +34,6 @@ public class InventoryController {
 
         return inventoryService.inSkuStock(skuCode);
 
-        
+
     }
 }
